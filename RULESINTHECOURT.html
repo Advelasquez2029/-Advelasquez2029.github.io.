@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rules</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://miro.medium.com/v2/1*2kA5cLxeTWH5XVlXm7FVFA.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: "Archivo Black", sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4fd5da, #78aca3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      color: white;
+      margin: 0;
+    }
+
+    ul.nav {
+      list-style: none;
+      margin: 0;
+      padding: 15px 0;
+      background-color: #6cbf95;
+      text-align: center;
+      box-shadow: inset 0 -3px 6px rgba(0,0,0,0.4);
+    }
+
+    ul.nav li {
+      display: inline-block;
+      margin: 0 25px;
+    }
+
+    ul.nav li a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      position: relative;
+    }
+
+    ul.nav li a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #54e980;
+      transition: width 0.3s;
+      margin: auto;
+    }
+
+    ul.nav li a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: rgba(236, 200, 101, 0.55);
+      margin-bottom: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 40px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    ul.rules {
+      list-style-type: disc;
+      padding-left: 40px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    figure {
+      text-align: center;
+    }
+
+    figure img,
+    figure video {
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 15px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+      border: 4px solid #fff;
+    }
+
+    figcaption {
+      font-size: 16px;
+      margin-top: 8px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RULES, COURT DIMENSIONS, AND ACTUAL GAMEPLAY</h1>
+</header>
+
+<nav aria-label="Main navigation">
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Aboutme.html">About Me</a></li>
+    <li><a href="RULESINTHECOURT.html" aria-current="page">Rules</a></li>
+    <li><a href="Faveplayers.html">Players</a></li>
+    <li><a href="ligaaround.html">League</a></li>
+    <li><a href="Teams.html">Teams</a></li>
+  </ul>
+</nav>
+
+<main>
+  
+  <section aria-labelledby="rules-heading">
+    <h2 id="rules-heading">Volleyball Rules</h2>
+    <ul class="rules">
+      <li>Only 6 players on the floor at any given time: 3 in the front row and 3 in the back row.</li>
+      <li>Points are made on every serve for the winning team of the rally (rally-point scoring).</li>
+      <li>Players may not hit the ball twice in succession (a block is not considered a hit).</li>
+      <li>Ball may be played off the net during a volley and on a serve.</li>
+      <li>A ball hitting a boundary line is in.</li>
+      <li>A ball is out if it hits an antenna, the floor outside the court, the referee stand, or the ceiling in a non-playable area.</li>
+      <li>It is legal to contact the ball with any part of a player's body.</li>
+      <li>It is illegal to catch, hold, or throw the ball.</li>
+      <li>A player cannot block or attack a serve from on or inside the 10-foot line.</li>
+      <li>After the serve, front-line players may switch positions at the net.</li>
+      <li>Matches are made up of sets; the number depends on level of play.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="court-heading">
+    <h2 id="court-heading">Court Dimensions</h2>
+    <figure>
+      <img src="courtdimensions.jpg" alt="Volleyball court dimensions diagram">
+      <figcaption>Official volleyball court dimensions diagram.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="gameplay-heading">
+    <h2 id="gameplay-heading">Actual Gameplay</h2>
+    <figure>
+      <video controls>
+        <source src="videoooo.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Watch a real volleyball rally in action.</figcaption>
+    </figure>
+  </section>
+</main>
+
+</body>
+</html>
