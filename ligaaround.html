@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Volleyball Leagues</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #9ee4bb, #64e198);
+      scroll-behavior: smooth;
+    }
+
+    
+    header {
+      background: linear-gradient(135deg, #4fd5da, #78aca3);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-family: 'Archivo Black', sans-serif;
+      color: white;
+      font-size: 2.2rem;
+      margin: 0;
+      text-align: center;
+      flex: 1;
+    }
+
+    .logos-left, .logos-right {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .logos-left img, .logos-right img {
+      height: 55px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: white;
+      border-radius: 10px;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    .logos-left img:hover, .logos-right img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    ul.nav {
+      list-style: none;
+      padding: 15px 0;
+      margin: 0;
+      background-color: #6cbf95;
+      text-align: center;
+      box-shadow: inset 0 -3px 6px rgba(0,0,0,0.4);
+    }
+
+    ul.nav li {
+      display: inline-block;
+      margin: 0 25px;
+    }
+
+    ul.nav li a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      font-weight: normal;
+      position: relative;
+    }
+
+    ul.nav li a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #54e980;
+      transition: width .3s;
+      margin: auto;
+    }
+
+    ul.nav li a:hover::after {
+      width: 100%;
+    }
+    section {
+      background: white;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 900px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    section h2 {
+      font-family: 'Archivo Black', sans-serif;
+      color: #2d594f;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      color: #444;
+      line-height: 1.6;
+      max-width: 85%;
+      margin: 0 auto 20px auto;
+    }
+
+    section img {
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      object-fit: contain;
+      background: #f5f5f5;
+      padding: 10px;
+    }
+    /* sir pls say hi to me in google chat if ure seeing this */
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logos-left">
+    <a href="#pvl"><img src="pvl-logo.png" alt="PVL Logo"></a>
+    <a href="#uaap"><img src="UAAP.jpg" alt="UAAP Logo"></a>
+  </div>
+
+  <h1>Volleyball Leagues</h1>
+
+  <div class="logos-right">
+    <a href="#fivb"><img src="fivb.png" alt="FIVB Logo"></a>
+    <a href="#spikers"><img src="SpikersTurfnewlogo.png" alt="Spikers Turf Logo"></a>
+  </div>
+</header>
+
+<ul class="nav">
+   <li><a href="index.html">Home</a></li>
+    <li><a href="Aboutme.html">About Me</a></li>
+    <li><a href="RULESINTHECOURT.html">Rules</a></li>
+    <li><a href="Faveplayers.html">Players</a></li>
+    <li><a href="ligaaround.html">League</a></li>
+    <li><a href="Teams.html">Teams</a></li>
+</ul>
+
+<section id="pvl">
+  <h2>
+    <a href="https://en.wikipedia.org/wiki/Premier_Volleyball_League" target="_blank" style="text-decoration: none; color: #2d594f;">
+      Premier Volleyball League (PVL)
+    </a>
+  </h2>
+  <p>The PVL is the most popular volleyball league in the Philippines, featuring top professional and collegiate players. It is known for exciting matches and a passionate fan base that follows every conference.</p>
+  <img src="pldtwin.jpg" alt="PVL Match">
+</section>
+
+<section id="uaap">
+  <h2>
+    <a href="https://en.wikipedia.org/wiki/UAAP_Season_87_volleyball_tournaments" target="_blank" style="text-decoration: none; color: #2d594f;">
+      UAAP Volleyball
+    </a>
+  </h2>
+  <p>The UAAP showcases the best university volleyball players in the country, bringing intense school rivalries to life. It is a stepping stone for many athletes to reach professional leagues like the PVL.</p>
+  <img src="lasalle.jpg" alt="UAAP Volleyball">
+</section>
+
+<section id="fivb">
+  <h2>
+    <a href="https://www.fivb.com/" target="_blank" style="text-decoration: none; color: #2d594f;">
+      FIVB (International Volleyball Federation)
+    </a>
+  </h2>
+  <p>The FIVB governs international volleyball competitions, including the Volleyball Nations League and the World Championship. It unites players from all over the world to showcase top-level volleyball talent.</p>
+  <img src="fivbcourtttt.jpeg" alt="FIVB Volleyball">
+</section>
+
+<section id="spikers">
+  <h2>
+    <a href="https://spikersturf.ph/" target="_blank" style="text-decoration: none; color: #2d594f;">
+      Spikers Turf
+    </a>
+  </h2>
+  <p>Spikers Turf is the premier men's volleyball league in the Philippines, promoting the growth of the sport among male athletes. It provides an exciting platform for local teams to compete and showcase their talent.</p>
+  <img src="spikerstuffwinn.jpg" alt="Spikers Turf">
+</section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+    
