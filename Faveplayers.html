@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faveplayers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #64e198;
+    }
+    header {
+      background: linear-gradient(135deg, #4fd5da, #78aca3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+    }
+    header h1 {
+      font-family: 'Archivo Black', sans-serif;
+      color: white;
+      font-size: 2rem;
+      margin: 0;
+    }
+     ul.nav {
+      list-style: none;
+      padding: 15px 0;
+      margin: 0;
+      background-color: #6cbf95;
+      text-align: center;
+      box-shadow: inset 0 -3px 6px rgba(0,0,0,0.4);
+    }
+
+    ul.nav li {
+      display: inline-block;
+      margin: 0 25px;
+    }
+
+    ul.nav li a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      font-weight: normal;
+      position: relative;
+    }
+
+    ul.nav li a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #54e980;
+      transition: width .3s;
+      margin: auto;
+    }
+
+    ul.nav li a:hover::after {
+      width: 100%;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+    
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+    
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+    .card p {
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      background: #fafafa;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Prominent Players</h1>
+</header>
+
+<ul class="nav">
+  <li><a href="Volleyball.html">Home</a></li>
+  <li><a href="Aboutme.html">About Me</a></li>
+  <li><a href="RULESINTHECOURT.html">Rules</a></li>
+  <li><a href="Faveplayers.html">Players</a></li>
+  <li><a href="Ligaaround.html">League</a></li>
+  <li><a href="Teams.html">Teams</a></li>
+</ul>
+
+<section class="container">
+ 
+  <div class="card">
+    <img src ="saori.jpeg" alt = "saori">
+    <p>Saori Kimura (Japan) </p>
+  </div>
+
+  <div class="card">
+    <img src="alyssavaledza.jpg" alt="Alyssa Valdez">
+    <p>Alyssa Valdez (Philippines) </p>
+  </div>
+
+  <div class="card">
+    <img src="yukiko-wada-jpn---volleyball--fivb-440nw-14108238df.jpg" alt="Yukiko Wada">
+    <p>Yukiko Wada (Japan) </p>
+  </div>
+
+  <div class="card">
+    <img src="malikakhantong.jpeg" alt="Malika Kanthong">
+    <p>Malika Kanthong (Thailand) </p>
+  </div>
+
+  <div class="card">
+    <img src="Gabbigarcia.jpg" alt="Gabriela Guimarães">
+    <p>Gabriela Guimarães (Brazil) </p>
+  </div>
+
+  <div class="card">
+    <img src="marckespejoo.jpg" alt="Marck Espejo">
+    <p>Marck Espejo (Philippines) </p>
+  </div>
+
+  <div class="card">
+    <img src="bryanbagunas.jpg" alt="Bryan Bagunas">
+    <p>Bryan Bagunas (Philippines) </p>
+  </div>
+
+  <div class="card">
+    <img src="PaoloaEGogo.jpg" alt="Paola Egonu">
+    <p>Paola Egonu (Italy) </p>
+  </div>
+
+  <div class="card">
+    <img src="jajasant.png" alt="Volleyball Player">
+    <p>Jaja Santiago (Philippines) </p>
+  </div>
+
+  <div class="card">
+    <img src="brookevansickle.jpg" alt="Brooke Van Sickle">
+    <p>Brooke Van Sickle (Philippines) </p>
+  </div>
+
+  <div class="card">
+    <img src="Ajcharaporn_Kongyot_1.jpg" alt="Ajcharaporn Kongyot">
+    <p>Ajcharaporn Kongyot (Thailand) </p>
+  </div>
+</section>
+
+</body>
+</html>
+
